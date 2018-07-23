@@ -36,23 +36,36 @@ body {
   justify-content: center;
 }
 /* Navigation Menu */
+nav div {
+  background-color: #222222;
+  padding: 10px 5px;
+  margin: 0;
+  border: 2px solid #ffffaa;
+  border-top: none;
+}
+
 nav ul {
   padding: 0;
+  margin: 0;
 }
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: 0.2s border;
+  transition: 0.2s border;
+}
+
+nav li:hover {
+  border-bottom: 1px solid #ffffaa;
+}
+
 nav a {
   text-decoration: none;
   color: #b2b2b2;
   font-size: 20px;
-}
-
-nav li {
-  list-style-type: none;
-  display: inline-block;
-  width: 15%;
-  padding: 10px 0;
-  text-align: center;
-  border: 2px solid #ffffaa;
-  background-color: #333333;
 }
 
 nav .active {
