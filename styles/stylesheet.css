@@ -85,7 +85,8 @@ nav .active {
 /* Mobile Changes */
 @media only screen and (max-width: 600px) {
   /* Navigation Changes */
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a {display: none;}
+  .topnav .active {display: inline!important;}
   .topnav a.icon {
     float: right;
     display: block;
