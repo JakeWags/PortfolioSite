@@ -20,28 +20,37 @@ body {
   border-right: 2px solid #ffffaa;
 }
 
-.actionLink div {
-  background: #333333;
-  border: 2px solid #ffffaa;
-  width: 20%;
-  padding: 10px 0;
+.align-center {
+  text-align: center;
 }
 
+.giant {
+  font-family: sans-serif;
+  font-size: 64px;
+}
 
-.actionLink {
-  font-size: 20px;
+.no-deco {
+  list-style: none;
   text-decoration: none;
-  color: #b2b2b2;
-  display: flex;
-  justify-content: center;
 }
+
+.link {
+  font-weight: bold;
+  color: #ffffaa;
+}
+
 /* Navigation Menu */
 nav div {
   background-color: #222222;
+  overflow: hidden;
   padding: 10px 5px;
   margin: 0;
   border: 2px solid #ffffaa;
   border-top: none;
+}
+
+.topnav .icon {
+  display: none;
 }
 
 nav ul {
@@ -71,4 +80,31 @@ nav a {
 nav .active {
   color: #ffffaa;
   font-weight: bold;
+}
+
+/* Mobile Changes */
+@media only screen and (max-width: 600px) {
+  /* Navigation Changes */
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  /* General Layout */
+  .giant {
+    font-size: 48px;
+  }
 }
