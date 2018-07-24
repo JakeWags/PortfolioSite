@@ -20,13 +20,38 @@ body {
   border-right: 2px solid #ffffaa;
 }
 
+h1,h2,h3,h4,h5,h6 { font-family: sans-serif; }
+
+a:visited {
+  color: #d9ba92;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
 .align-center {
   text-align: center;
 }
 
+.align-left {
+  text-align: left;
+  margin-left: 5px;
+}
+
+.align-right {
+  text-align: right;
+  margin-right: 5px;
+}
+
 .giant {
-  font-family: sans-serif;
   font-size: 64px;
+}
+
+.header {
+  font-weight: bold;
 }
 
 .no-deco {
@@ -34,9 +59,24 @@ body {
   text-decoration: none;
 }
 
+.highlight {
+  color: #cfbd7e;
+}
+
 .link {
   font-weight: bold;
   color: #ffffaa;
+}
+
+.half-width-center {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.div-dark {
+  background-color: #333333;
+  border: 2px solid #ffffaa;
+  color: #b2b2b2;
 }
 
 /* Navigation Menu */
@@ -67,18 +107,18 @@ nav li {
   transition: 0.2s border;
 }
 
-nav li:hover {
+nav a:hover > li {
   border-bottom: 1px solid #ffffaa;
 }
 
 nav a {
   text-decoration: none;
-  color: #b2b2b2;
+  color: #b2b2b2!important;
   font-size: 20px;
 }
 
 nav .active {
-  color: #ffffaa;
+  color: #ffffaa!important;
   font-weight: bold;
 }
 
@@ -86,7 +126,7 @@ nav .active {
 @media only screen and (max-width: 600px) {
   /* Navigation Changes */
   .topnav a {display: none;}
-  .topnav .active {display: inline!important;}
+  .topnav .active {display: inline;}
   .topnav a.icon {
     float: right;
     display: block;
@@ -107,5 +147,9 @@ nav .active {
   /* General Layout */
   .giant {
     font-size: 48px;
+  }
+
+  .half-width-center {
+    width: 100%;
   }
 }
