@@ -1,3 +1,10 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+
+h1,h2,h3,h4,h5,h6 { font-family: 'Montserrat', sans-serif, verdana; }
+
+span,p,div,a,nav,ul,li { font-family: 'Open Sans', verdana, sans-serif; }
+
 /* General Layout */
 html {
   width: 100%;
@@ -11,7 +18,7 @@ body {
   padding: 0 10px;
   margin: 0 auto;
   font-size: 16px;
-  font-family: verdana, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background: #b2b2b2;
   color: #222222;
   height: 100%;
@@ -19,8 +26,6 @@ body {
   border-left: 2px solid #ffffaa;
   border-right: 2px solid #ffffaa;
 }
-
-h1,h2,h3,h4,h5,h6 { font-family: sans-serif; }
 
 a {
   color: #ffffaa;
@@ -36,16 +41,16 @@ a:visited {
   position: relative;
 }
 
-.align-center {
+.text-align-center {
   text-align: center;
 }
 
-.align-left {
+.text-align-left {
   text-align: left;
   margin-left: 5px;
 }
 
-.align-right {
+.text-align-right {
   text-align: right;
   margin-right: 5px;
 }
