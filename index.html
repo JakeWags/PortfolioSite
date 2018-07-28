@@ -8,42 +8,49 @@
     <title>Jake Wagoner</title>
   </head>
   <body>
-    <nav>
-      <div id="myTopnav" class="topnav">
-        <ul>
-          <a href="./index.html" class="active">
-            <li>
-              Home
-            </li>
-          </a>
-          <a href="./pages/about.html">
-            <li>
-              About Me
-            </li>
-          </a>
-          <a href="./pages/contact.html">
-            <li>
-              Contact
-            </li>
-          </a>
-          <a href="javascript:void(0);" class="icon" onclick="unfoldNav()">
-            <li>
-              <i class="fa fa-bars"></i>
-            </li>
-          </a>
-        </ul>
+    <div class="navbar">
+      <a href="./index.html">
+        <div class="branding text-align-left">
+          <h1>Jake Wagoner</h1>
+        </div>
+      </a>
+      <nav>
+        <div id="myTopnav" class="topnav">
+          <ul>
+            <a href="./index.html" class="active">
+              <li>
+                Home
+              </li>
+            </a>
+            <a href="./pages/about.html">
+              <li>
+                About Me
+              </li>
+            </a>
+            <a href="./pages/contact.html">
+              <li>
+                Contact
+              </li>
+            </a>
+            <a href="javascript:void(0);" class="icon" onclick="unfoldNav()">
+              <li>
+                <i class="fa fa-bars"></i>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <script>
+        function unfoldNav() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+              x.className = "topnav";
+            }
+          }
+          </script>
+        </nav>
       </div>
-      <script>
-      function unfoldNav() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-      </script>
-    </nav>
       <div class="text-align-center header">
         <h1 class="giant">I'm Jake Wagoner</h1>
         <h3>

@@ -1,15 +1,28 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Nanum+Gothic|Open+Sans');
 
 h1,h2,h3,h4,h5,h6 { font-family: 'Montserrat', sans-serif, verdana; }
 
 span,p,div,a,nav,ul,li { font-family: 'Open Sans', verdana, sans-serif; }
 
+.branding h1 { font-family: 'Nanum Gothic', sans-serif }
+
+/* Colors
+*   Very Dark Blue: #000030
+*   Off-white: #f7f9fb
+*   Off-black: #222222
+*   Light-Orange: #ffb347
+*   Matte-Blue: #31708e
+*   Matte-Light-Blue: #5085a5
+*   Light-Blue: #8fc1e3
+*/
+
+
 /* General Layout */
 html {
   width: 100%;
   height: 100%;
-  background: #333333;
+  background: #000030;
   display: flex;
   justify-content: center;
 }
@@ -19,20 +32,20 @@ body {
   margin: 0 auto;
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
-  background: #b2b2b2;
+  background: #f7f9fb;
   color: #222222;
   height: 100%;
   width: 90%;
-  border-left: 2px solid #ffffaa;
-  border-right: 2px solid #ffffaa;
+  border-left: 2px solid #222222;
+  border-right: 2px solid #222222;
 }
 
 a {
-  color: #ffffaa;
+  color: #ffb347;
 }
 
 a:visited {
-  color: #d9ba92;
+  color: #ffb347;
 }
 
 .main {
@@ -69,12 +82,12 @@ a:visited {
 }
 
 .highlight {
-  color: #cfbd7e;
+  color: #ffb347;
 }
 
 .link {
   font-weight: bold;
-  color: #ffffaa;
+  color: #ffb347;
 }
 
 .half-width-center {
@@ -83,18 +96,18 @@ a:visited {
 }
 
 .div-dark {
-  background-color: #333333;
-  border: 2px solid #ffffaa;
-  color: #b2b2b2;
+  background-color: #31708e;
+  border: 2px solid #222222;
+  color: #f7f9fb;
 }
 
 /* Navigation Menu */
-nav div {
-  background-color: #222222;
+.navbar {
+  background-color: #5085a5;
   overflow: hidden;
   padding: 10px 5px;
   margin: 0;
-  border: 2px solid #ffffaa;
+  border: 2px solid #222222;
   border-top: none;
 }
 
@@ -102,12 +115,12 @@ nav div {
   display: none;
 }
 
-nav ul {
+.navbar ul {
   padding: 0;
   margin: 0;
 }
 
-nav li {
+.navbar li {
   list-style: none;
   display: inline-block;
   margin-right: 10px;
@@ -116,18 +129,25 @@ nav li {
   transition: 0.2s border;
 }
 
-nav a:hover > li {
-  border-bottom: 1px solid #ffffaa;
+.navbar .branding, .branding h1 {
+  color: #f7f9fb;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
 }
 
-nav a {
+.navbar a:hover > li {
+  border-bottom: 1px solid #ffb347;
+}
+
+.navbar a {
   text-decoration: none;
-  color: #b2b2b2!important;
+  color: #8fc1e3!important;
   font-size: 20px;
 }
 
-nav .active {
-  color: #ffffaa!important;
+.navbar .active {
+  color: #ffb347!important;
   font-weight: bold;
 }
 

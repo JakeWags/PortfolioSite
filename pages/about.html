@@ -8,42 +8,49 @@
     <title>About Me</title>
   </head>
   <body>
-    <nav>
-      <div id="myTopnav" class="topnav">
-        <ul>
-          <a href="./../index.html">
-            <li>
-              Home
-            </li>
-          </a>
-          <a href="./about.html" class="active">
-            <li>
-              About Me
-            </li>
-          </a>
-          <a href="./contact.html">
-            <li>
-              Contact
-            </li>
-          </a>
-          <a href="javascript:void(0);" class="icon" onclick="unfoldNav()">
-            <li>
-              <i class="fa fa-bars"></i>
-            </li>
-          </a>
-        </ul>
-      </div>
-      <script>
-      function unfoldNav() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
+    <div class="navbar">
+      <a href="../index.html">
+        <div class="branding text-align-left">
+          <h1>Jake Wagoner</h1>
+        </div>
+      </a>
+      <nav>
+        <div id="myTopnav" class="topnav">
+          <ul>
+            <a href="./../index.html">
+              <li>
+                Home
+              </li>
+            </a>
+            <a href="./about.html" class="active">
+              <li>
+                About Me
+              </li>
+            </a>
+            <a href="./contact.html">
+              <li>
+                Contact
+              </li>
+            </a>
+            <a href="javascript:void(0);" class="icon" onclick="unfoldNav()">
+              <li>
+                <i class="fa fa-bars"></i>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <script>
+        function unfoldNav() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
         }
-      }
-      </script>
-    </nav>
+        </script>
+      </nav>
+    </div>
     <h1 class="text-align-center header">About Me</h1>
   </body>
 </html>
