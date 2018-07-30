@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./../styles/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Skills</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="../index.html">
+        <div class="branding text-align-left">
+          <h1>Jake Wagoner</h1>
+        </div>
+      </a>
+      <nav>
+        <div id="myTopnav" class="topnav">
+          <ul>
+            <a href="./../index.html">
+              <li>
+                Home
+              </li>
+            </a>
+            <a href="./about.html">
+              <li>
+                About Me
+              </li>
+            </a>
+            <a href="./skills.html" class="active">
+              <li>
+                Skills
+              </li>
+            </a>
+            <a href="./contact.html">
+              <li>
+                Contact
+              </li>
+            </a>
+            <a href="javascript:void(0);" class="icon" onclick="unfoldNav()">
+              <li>
+                <i class="fa fa-bars"></i>
+              </li>
+            </a>
+          </ul>
+        </div>
+        <script>
+        function unfoldNav() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+      </nav>
+    </div>
+    <div class="text-align-center">
+      <h1>Skills</h1>
+    </div>
+    <div class="skills-text">
+      <h3>Programming:</h3>
+      <p>
+        <ul>
+          <li>
+            Javascript(NodeJS, JQuery, React, Vanilla): Advanced
+          </li>
+          <li>
+            HTML/CSS: Advanced
+          </li>
+          <li>
+            C++: Intermediate-Advanced
+          </li>
+          <li>
+            Liquid: Intermediate
+          </li>
+          <li>
+            Java: Learning
+          </li>
+        </ul>
+      </p>
+      <h3>Platforms:</h3>
+      <p>
+        <ul>
+          <li>
+            Shopify
+          </li>
+          <li>
+            Wordpress
+          </li>
+        </ul>
+      </p>
+      <div class="verticle-divider align-self-center">
+        &nbsp;
+      </div>
+      <div class="text-align-center">
+        <h1>Prior Work</h1>
+      </div>
+      <h3>Websites I've worked on:</h3>
+      <p>** Note: All work done alongside senior developers at 530medialab **</p>
+      <p>
+        <ul>
+          <li>
+            <a href="https://mrchocolate.com/" target="_blank">MrChocolate (cart page)</a>
+          </li>
+          <li>
+            <a href="http://centurysnacks.com/contact-us/" target="_blank">Century Snacks (contact us page)</a>
+          </li>
+          <!-- <li>
+            <a href="https://edgeproducts.com/shop/insight-cs2">Edge Products, Superchips, Diablo Sport (Zendesk Support Chat Widget)</a>
+          </li> -->
+        </ul>
+      </p>
+      <h3>My Creations:</h3>
+      <p>
+        <ul>
+          <li>
+            <a href="https://github.com/JakeWags" target="_blank">My github</a>
+          </li>
+          <li>
+            <a href="https://jakewags.github.io/Zharekt" target="_blank">Text-Based RPG (unfinished)</a>
+          </li>
+          <li>
+            <a href="https://jakewags.github.io/Paint/paint.html" target="_blank">Canvas Paint App</a>
+          </li>
+        </ul>
+      </p>
+    </div>
+  </body>
+</html>
